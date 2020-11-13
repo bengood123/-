@@ -1,0 +1,231 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS---------------------------------------------------------------*/
+body{
+    background-color: rgb(247,247,247);
+}
+.warp{
+    width: 1024px;
+    margin: 0 auto;
+}
+/*head--------------------------------------------------------------*/
+.head{
+    background-image: url(../images/Hero.png);
+    background-size: 1024px 380px;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+}
+.head h1{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 48px;
+    line-height: 250px;
+    letter-spacing: 3px;
+}
+/*select設計----------------------------------------------*/
+#list{
+    appearance: none;
+    background: url(../images/icons_down.png) no-repeat 360px center transparent;
+    width: 400px;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(221, 226, 235,0.6);
+    border: 3px solid white;
+    border-radius: 5px;
+}
+/*熱門行政區設計--------------------------------------------*/
+.hotplace{
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px 0;
+    box-shadow: 1px 1px 2px gray;
+}
+.hotplace h2{
+    text-align: left;
+    padding: 0 0 10px 30px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.hotzone{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+}
+.hotzone li{
+    margin: 10px;
+}
+.hotzone-a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.hotzone1 button,.hotzone2 button,.hotzone3 button,.hotzone4 button{
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+.hotzone1 button:hover,.hotzone2 button:hover,.hotzone3 button:hover,.hotzone4 button:hover{
+    margin-top: 5px;
+    box-shadow: -3px -3px 8px gray ;
+}
+.hotzone1 button{
+    background-color: rgb(138,130,204);
+    border: 3px solid  rgb(131, 124, 192);
+}
+.hotzone2 button{
+    background-color: rgb(255,167,130);
+    border: 3px solid   rgb(226, 143, 107);
+}
+.hotzone3 button{
+    background-color: rgb(245,208,5);
+    border: 3px solid  rgb(224, 193, 14);
+}
+.hotzone4 button{
+    background-color: rgb(85,154,200);
+    border: 3px solid rgb(81, 144, 187);
+}
+/*content---------------------------------------------------------------*/
+.line{
+    height: 1;
+    background-image: linear-gradient(to right, rgb(85,154,200), rgb(85,154,200) 6px,transparent 6px);
+    background-size: 10px 100%;
+    width: 1000px;
+    height: 3px;
+    margin: 10px auto;
+}
+.zone{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0 10px 0;
+    color: rgb(138,130,204);
+    font-weight: bolder;
+}
+.placelist{
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.zoneimg{
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.zone-li{
+    width: 470px;
+    box-shadow: 1px 1px 2px gray;
+    margin: 20px;
+}
+.zone-h4,.zone-span{
+    color: white;
+}
+.zone-h4{
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.zone-span{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(54, 54, 56, 0.6);
+    border-radius: 10px;
+}
+.zone-time,.zone-pin,.zone-phone{
+    padding: 15px 0 0 20px;
+    font-size: 15px;
+}
+.zone-time span{
+    line-height: 1.2;
+    word-wrap: break-word;
+    text-align: justify;
+    
+}
+.zone-time img,.zone-pin img,.zone-phone img{
+    padding-right: 10px;
+    vertical-align: middle;
+    width: 15px;
+}
+.zone-phone{
+    padding-bottom: 15px;
+}
+.zone-tag{
+    padding-left: 230px;
+}
+/*footer----------------------------------------------------------------*/
+.footer{
+    background-color: rgb(85, 154, 200);
+    text-align: center;
+    position: relative;
+}
+.footer h3{
+    color: white;
+    padding: 10px 0;
+}
+.footer p{
+    color: rgb(219,199,123);
+    padding: 10px 0;
+}
+.gotop{
+    position: fixed;
+    right: 150px;
+    bottom: 85px;
+}
